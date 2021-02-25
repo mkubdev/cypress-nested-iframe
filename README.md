@@ -7,7 +7,7 @@ With limited iframe support from Cypress [[Issue #136](https://github.com/cypres
 
 The solution is to create an iframe command that returns a promise upon iframe loading completion. These commands, aliased as `iframe()`, can be chained together to deal with nested iframes.
 
-```
+```js
 // support/commands.js
 
 Cypress.Commands.add('iframe', { prevSubject: 'element' }, $iframe => {
@@ -21,7 +21,7 @@ Cypress.Commands.add('iframe', { prevSubject: 'element' }, $iframe => {
 
 Here is an example of usage:
 
-```
+```js
 // One iframe
 cy.get("#iframe").iframe().find("#target").type("HELLO WORLD");
 
