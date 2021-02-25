@@ -1,5 +1,5 @@
 # Using Cypress with iframes
- ⚙️ An example of how to use (Cypress)[https://www.cypress.io/] to target nested elements within iframes.
+ ⚙️ An example of how to use [Cypress](https://www.cypress.io/) to target nested elements within iframes.
 
 With limited iframe support from Cypress [[Issue #136](https://github.com/cypress-io/cypress/issues/136)], the following workaround in this repo allowed to target elements and interact with iframes during tests.
 
@@ -31,4 +31,4 @@ cy.get("#firstFrame").iframe().find("#secondFrame").iframe().find('#target').typ
 
 ### Links
 
-(Cypress.io)[https://www.cypress.io/]
+[Cypress.io](https://www.cypress.io/)
